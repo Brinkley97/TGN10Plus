@@ -33,8 +33,10 @@
 ## How does the software works
 - The software takes our created Question Templates and generate Specific Questions based on the ontology mappings. We then take the generated Specific Questions to run analysis based on the required data. 
 
-## More
+## References
 - [tiles-day-night repo](https://github.com/usc-sail/tiles-day-night)
 - [TGN10Plus old repo](https://github.com/Brinkley97/TGN10/tree/main)
 - [TILES-2018, a longitudinal physiologic and behavioral data set of hospital workers](https://www.mendeley.com/catalogue/8996e643-6d17-3ece-b50c-805c1f617b1d/?utm_source=desktop&utm_medium=1.19.8&utm_campaign=open_catalog&userDocumentId=%7Ba089ce74-8915-40a2-a6c1-da344c6179c5%7D)
 - [A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data](https://www.nature.com/articles/s41598-021-87029-w?proof=t%25C2%25A0)
+- “Reproducibility  as  a  Stepping  Stone  to  Intelligent  Assistants  for  Data Analysis: An Analysis of Physical Activity, Sleep, and Work Shift in Nurses.”Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. Technical Report ISI-TR-741, Information Sciences Institute, University of Southern California, Marina del Rey, CA, 90202.  November 2022.Available from https://www.isi.edu/results/technical-reports/.
+
