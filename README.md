@@ -18,18 +18,18 @@
 ## How to use software and Requirements
 - To use this software, you can clone/fork the repository. Once you do this, ensure that you have installed the following coding languages, libraries and packages. We also include the version we're using but have not tested our code on updated versions. To find a specific analysis, navigate to that file and run all cells. 
    - `rpy2` (3.5.4) to integrate python and R
-   - python (3.7.5)
-      - pandas (1.0.5)
-      - scipy (1.1.0)
-      - statsmodels()
-      - pingouin()
-   - R ()
-      - anova()
-      - ols()
-      - lmer()
-      - emmeans()
-      - PostHocTest()
-      - ezANOVA()
+   - `python` (3.7.5)
+      - `pandas` (1.0.5)
+      - `scipy` (1.1.0)
+      - `statsmodels` ()
+      - `pingouin` ()
+   - `R` ()
+      - `anova` ()
+      - `ols` ()
+      - `lmer` ()
+      - `emmeans` ()
+      - `PostHocTest` ()
+      - `ezANOVA` ()
   
 ## How does the software works
 - The software takes our created Question Templates and generate Specific Questions based on the ontology mappings. We then take the generated Specific Questions to run analysis based on the required data. 
@@ -39,6 +39,6 @@
 2. [A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data](https://www.nature.com/articles/s41598-021-87029-w?proof=t%25C2%25A0): Data analysis paper
    - [tiles-day-night repo](https://github.com/usc-sail/tiles-day-night): Data analysis code
 3. [“Reproducibility  as  a  Stepping  Stone  to  Intelligent  Assistants  for  Data Analysis: An Analysis of Physical Activity, Sleep, and Work Shift in Nurses](https://www.isi.edu/results/technical-reports/). ”Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. Technical Report ISI-TR-741, Information Sciences Institute, University of Southern California, Marina del Rey, CA, 90202. November 2022.
-4. “Reproducibility  as  a  Stepping  Stone  to  Intelligent  Assistants  for  Data Analysis: An Analysis of Physical Activity, Sleep, and Work Shift in Nurses.”Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. Technical Report ISI-TR-741, Information Sciences Institute, University of Southern California, Marina del Rey, CA, 90202. March 2023. ACM IUI (Accepted)
+4. “Reproducibility  as  a  Stepping  Stone  to  Intelligent  Assistants  for  Data Analysis: An Analysis of Physical Activity, Sleep, and Work Shift in Nurses.”Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. March 2023. ACM IUI (Accepted)
    - [Pre-ACM IUI Acceptance](https://zenodo.org/record/7552433#.Y9Fg0-zMIRQ): Our contribution
    - [TGN10Plus old repo](https://github.com/Brinkley97/TGN10/tree/main): Our contribution
