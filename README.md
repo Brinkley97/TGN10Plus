@@ -40,3 +40,5 @@
 - [A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data](https://www.nature.com/articles/s41598-021-87029-w?proof=t%25C2%25A0)
 - “Reproducibility  as  a  Stepping  Stone  to  Intelligent  Assistants  for  Data Analysis: An Analysis of Physical Activity, Sleep, and Work Shift in Nurses.”Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. Technical Report ISI-TR-741, Information Sciences Institute, University of Southern California, Marina del Rey, CA, 90202.  November 2022.Available from https://www.isi.edu/results/technical-reports/.
 
+[![DOI](https://zenodo.org/badge/587812631.svg)](https://zenodo.org/badge/latestdoi/587812631)
+
