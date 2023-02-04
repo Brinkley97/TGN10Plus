@@ -1,4 +1,4 @@
-# TGN10Plus
+# TGN10+
 [![DOI](https://zenodo.org/badge/587812631.svg)](https://zenodo.org/badge/latestdoi/587812631)
  
 ## Description of files
