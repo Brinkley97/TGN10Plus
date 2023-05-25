@@ -1,0 +1,28 @@
+conda env: new_tiles_day_night
+channels:
+  - menpo
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - nodejs
+  - r-irkernel
+  - jupyterlab
+  - pandas
+  - r-reticulate
+  - pingouin
+  - r-ez
+  - r-devtools
+conda env: rpy2
+channels:
+  - menpo
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - ipykernel
+  - jupyter
+  - jupyterlab
+  - pandas
+  - numpy
+  - pingouin
