@@ -2,7 +2,7 @@ name: Binder
 on: [push]
 
 jobs:
-  Create-MyBinderOrg-Cache:
+  build-docker-image:
     runs-on: ubuntu-latest
     steps:
       - name: update jupyter dependencies with repo2docker
