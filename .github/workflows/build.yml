@@ -7,13 +7,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+        name: Install python (required by repo2docker)
         with:
           python-version: "3.10"
-      - name: update jupyter dependencies with repo2docker
-        uses: jupyterhub/repo2docker-action@master
+      - name: Install dependencies and push image repo2docker
+        uses: wragge/repo2docker-action@master
         with:
           DOCKER_REGISTRY: ghcr.io
           DOCKER_USERNAME: ${{ github.actor }}
           DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-          BINDER_CACHE: true
-          PUBLIC_REGISTRY_CHECK: true
+          BINDER_CACHE: false
+          PUBLIC_REGISTRY_CHECK: false
