@@ -8,11 +8,83 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:disk="http://disk-project.org/ontology/disk#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     >
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.w3id.org/TGN10Plus/resources/">
         <owl:imports rdf:resource="https://w3id.org/sqo"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus/resources/hasReference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3id.org/TGN10Plus/resources/hasReference"/>
+    
+
+
+    <!-- https://w3id.org/sqo#hasQuestionTemplate -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sqo#hasQuestionTemplate"/>
+    
+
+
+    <!-- https://w3id.org/sqo#hasQuestionVariable -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sqo#hasQuestionVariable"/>
+    
+
+
+    <!-- https://w3id.org/sqo#hasVariableName -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sqo#hasVariableName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/sqo#DynamicOptionsQuestionVariable -->
+
+    <owl:Class rdf:about="https://w3id.org/sqo#DynamicOptionsQuestionVariable">
+        <rdfs:comment>Represents demographic, behavioral, psychological, and physiological variables collected in the original study [1].</rdfs:comment>
+        <hasReference>[1] ﻿Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. 2023. Reproducibility as a Stepping Stone to Intelligent Assistants for Data Analysis: Recreating a Study of Physical Activity, Sleep, and Work Shift in Nurses. In 28th International Conference on Intelligent User Interfaces (IUI ’23 Companion), March 27–31, 2023, Sydney, NSW, Australia. ACM, New York, NY, USA, 5 pages. https://doi.org/10.1145/3581754.3584173</hasReference>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sqo#Question -->
+
+    <owl:Class rdf:about="https://w3id.org/sqo#Question">
+        <rdfs:comment>Created from statements in the original paper to specify which subset of nurses with respect to the variables to test for significance [1].</rdfs:comment>
+        <hasReference>[1] ﻿Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. 2023. Reproducibility as a Stepping Stone to Intelligent Assistants for Data Analysis: Recreating a Study of Physical Activity, Sleep, and Work Shift in Nurses. In 28th International Conference on Intelligent User Interfaces (IUI ’23 Companion), March 27–31, 2023, Sydney, NSW, Australia. ACM, New York, NY, USA, 5 pages. https://doi.org/10.1145/3581754.3584173</hasReference>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sqo#QuestionVariable -->
+
+    <owl:Class rdf:about="https://w3id.org/sqo#QuestionVariable">
+        <rdfs:comment>Represents demographic, behavioral, psychological, and physiological variables collected in the original study [1].</rdfs:comment>
+        <hasReference>[1] ﻿Detravious J. Brinkley, Emmanuel Johnson, Tiantian Feng, and Yolanda Gil. 2023. Reproducibility as a Stepping Stone to Intelligent Assistants for Data Analysis: Recreating a Study of Physical Activity, Sleep, and Work Shift in Nurses. In 28th International Conference on Intelligent User Interfaces (IUI ’23 Companion), March 27–31, 2023, Sydney, NSW, Australia. ACM, New York, NY, USA, 5 pages. https://doi.org/10.1145/3581754.3584173</hasReference>
+    </owl:Class>
     
 
 
@@ -27,51 +99,7 @@
     
 
 
-    <!-- http://www.w3id.org/TGN10Plus/resources/QT-1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/QT-1">
-        <rdf:type rdf:resource="https://w3id.org/sqo#Question"/>
-        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group1"/>
-        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group2"/>
-        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/DemographicVariable"/>
-        <sqo:hasQuestionTemplate>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?DemographicVariable</sqo:hasQuestionTemplate>
-        <rdfs:label>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?DemographicVariable?</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.w3id.org/TGN10Plus/resources/QT-2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/QT-2">
-        <rdf:type rdf:resource="https://w3id.org/sqo#Question"/>
-        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group1"/>
-        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group2"/>
-        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/BehavioralVariable"/>
-        <sqo:hasQuestionTemplate>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?BehavioralVariable</sqo:hasQuestionTemplate>
-        <rdfs:label>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?BehavioralVariable?</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.w3id.org/TGN10Plus/resources/ClimateVariableName -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/Group1">
-        <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
-        <rdf:type rdf:resource="https://w3id.org/sqo#QuestionVariable"/>
-        <sqo:hasVariableName>?Group1</sqo:hasVariableName>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/Group2">
-        <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
-        <rdf:type rdf:resource="https://w3id.org/sqo#QuestionVariable"/>
-        <sqo:hasVariableName>?Group2</sqo:hasVariableName>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/DemographicVariable">
-        <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
-        <rdf:type rdf:resource="https://w3id.org/sqo#QuestionVariable"/>
-        <sqo:hasVariableName>?DemographicVariable</sqo:hasVariableName>
-    </owl:NamedIndividual>
+    <!-- http://www.w3id.org/TGN10Plus/resources/BehavioralVariable -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/BehavioralVariable">
         <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
@@ -80,6 +108,63 @@
     </owl:NamedIndividual>
     
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
+    <!-- http://www.w3id.org/TGN10Plus/resources/DemographicVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/DemographicVariable">
+        <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
+        <rdf:type rdf:resource="https://w3id.org/sqo#QuestionVariable"/>
+        <sqo:hasVariableName>?DemographicVariable</sqo:hasVariableName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus/resources/Group1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/Group1">
+        <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
+        <rdf:type rdf:resource="https://w3id.org/sqo#QuestionVariable"/>
+        <sqo:hasVariableName>?Group1</sqo:hasVariableName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus/resources/Group2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/Group2">
+        <rdf:type rdf:resource="https://w3id.org/sqo#DynamicOptionsQuestionVariable"/>
+        <rdf:type rdf:resource="https://w3id.org/sqo#QuestionVariable"/>
+        <sqo:hasVariableName>?Group2</sqo:hasVariableName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus/resources/QT-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/QT-1">
+        <rdf:type rdf:resource="https://w3id.org/sqo#Question"/>
+        <rdfs:label>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?DemographicVariable?</rdfs:label>
+        <sqo:hasQuestionTemplate>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?DemographicVariable</sqo:hasQuestionTemplate>
+        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/DemographicVariable"/>
+        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group1"/>
+        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus/resources/QT-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus/resources/QT-2">
+        <rdf:type rdf:resource="https://w3id.org/sqo#Question"/>
+        <rdfs:label>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?BehavioralVariable?</rdfs:label>
+        <sqo:hasQuestionTemplate>What are differences in primarily ?Group1 nurses and primarily ?Group2 nurses for ?BehavioralVariable</sqo:hasQuestionTemplate>
+        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/BehavioralVariable"/>
+        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group1"/>
+        <sqo:hasQuestionVariable rdf:resource="http://www.w3id.org/TGN10Plus/resources/Group2"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
