@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3id.org/TGN10Plus#"
+     xml:base="http://www.w3id.org/TGN10Plus"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.w3id.org/TGN10Plus">
+        <rdfs:comment>Map Variables from TILES-2018 and Multimodal Analysis Papers</rdfs:comment>
+        <rdfs:label>TGN10+</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasAge">
+        <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
+        <rdfs:label>has age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasGender">
+        <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#Gender"/>
+        <rdfs:label>has gender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#hasHighestDegree -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasHighestDegree">
+        <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#HighestDegree"/>
+        <rdfs:label>has highest degree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#hasMeanAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasMeanAge">
+        <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#MeanAge"/>
+        <rdfs:label>has mean age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#hasNativeLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasNativeLanguage">
+        <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#NativeLanguage"/>
+        <rdfs:label>has native language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Age -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Age">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
+        <rdfs:label>Age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#BFI-2 -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#BFI-2">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:label>Personality (BFI-2)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Behavioral -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Behavioral">
+        <rdfs:label>Behavioral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Demographic -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Demographic">
+        <rdfs:label>Demographic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#EMA -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#EMA">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:label>Ecological Momentary Assessments (EMA)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Gender -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
+        <rdfs:label>Gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#HeartRate -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#HeartRate">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Physiological"/>
+        <rdfs:label>Heart Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#HighestDegree -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#HighestDegree">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
+        <rdfs:label>Highest Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#MSF -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#MSF">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
+        <rdfs:label>Mid-Sleep Time on Off Days</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#MSW -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#MSW">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
+        <rdfs:label>Mid-Sleep Time on Work Days</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#MeanAge -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#MeanAge">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
+        <rdfs:label>Mean Age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#ModerateActivityZone -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#ModerateActivityZone">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
+        <rdfs:label>Moderate Activity Zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#NativeLanguage -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#NativeLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
+        <rdfs:label>Native Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#OverVigorousActivityZone -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#OverVigorousActivityZone">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
+        <rdfs:label>Over Vigorous Activity Zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#PANAS -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#PANAS">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:comment>Positive and negative affect schedule (PANAS) The PANAS [29] was used to measure level of the positive affect (PA) and negative affect (NA). The PANAS consisted of 10 PA items and 10 NA items, with each item on a scale ranging from 1 to 5. PA and NA scores were calculated by summing individual item responses within each group (PA and NA), with higher scores representing higher levels of corresponding affect.</rdfs:comment>
+        <rdfs:label>Affect (PANAS)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#PSQI -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#PSQI">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:label>Sleep Quality (PSQI)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Physiological -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Physiological">
+        <rdfs:label>Physiological</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#RestActivityZone -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#RestActivityZone">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
+        <rdfs:label>Rest Activity Zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#STAI -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#STAI">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:label>Anxiety (STAI)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#SWLS -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SWLS">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:label>Life Satisfaction (SWLS)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Sleep -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Sleep">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Physiological"/>
+        <rdfs:label>Sleep</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#SleepDuration -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SleepDuration">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
+        <rdfs:label>Sleep Duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#SleepEfficiency -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SleepEfficiency">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
+        <rdfs:label>Sleep Efficiency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#SleepOnsetTime -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SleepOnsetTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
+        <rdfs:label>Sleep Onset Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Time -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Time">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
+        <rdfs:label>Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#VigorousActivityZone -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#VigorousActivityZone">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
+        <rdfs:label>Vigorous Activity Zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#WakeUpTime -->
+
+    <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#WakeUpTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
+        <rdfs:label>Wake Up Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#College -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#College">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#HighestDegree"/>
+        <rdfs:label>College</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#EMAAnxiety -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMAAnxiety">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
+        <rdfs:label>EMA Anxiety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#EMANegativeAffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMANegativeAffect">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
+        <rdfs:label>EMA Negative Affect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#EMAPositiveAffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMAPositiveAffect">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
+        <rdfs:label>EMA Positive Affect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#EMAStress -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMAStress">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
+        <rdfs:label>EMA Stress</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#English">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#NativeLanguage"/>
+        <rdfs:label>English</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#Graduate -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#Graduate">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#HighestDegree"/>
+        <rdfs:label>Graduate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#NegativeAffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#NegativeAffect">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#PANAS"/>
+        <rdfs:label>Negative Affect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#NonEnglish -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#NonEnglish">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#NativeLanguage"/>
+        <rdfs:label>Non-English</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#PositiveAffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#PositiveAffect">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#PANAS"/>
+        <rdfs:label>Positive Affect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#SocialJetLag -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#SocialJetLag">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#MSF"/>
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#MSW"/>
+        <rdfs:label>Social Jet Lag</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#T03-07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T03-07">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
+        <rdfs:label>3:00 h - 7:00 h</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#T07-11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T07-11">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
+        <rdfs:label>7:00 h - 11:00 h</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#T11-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T11-15">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
+        <rdfs:label>11:00 h - 15:00 h</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#T15-19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T15-19">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
+        <rdfs:label>15:00 h - 19:00 h</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#T19-23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T19-23">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
+        <rdfs:label>19:00 h - 23:00 h</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#T23-03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T23-03">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
+        <rdfs:label>23:00 h - 3:00 h</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#lessThan40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#lessThan40">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
+        <rdfs:label>&gt;= 40</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#40orMore -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#40orMore">
+        <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
+        <rdfs:label>&lt; 40</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
