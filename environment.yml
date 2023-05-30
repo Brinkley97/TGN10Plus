@@ -1,0 +1,18 @@
+name: tgn10plus
+channels:
+  - menpo
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterlab
+  - python=3.9
+  - r-irkernel
+  - numpy
+  - nodejs
+  - pandas
+  - pingouin
+  - r-reticulate
+  - r-devtools
+  - r-ez
+  - ipykernel
+prefix: /Users/mosorio/miniconda3/envs/tgn10plus
