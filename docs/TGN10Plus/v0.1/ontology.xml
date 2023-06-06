@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:TGN10Plus="http://www.w3id.org/TGN10Plus#">
     <owl:Ontology rdf:about="http://www.w3id.org/TGN10Plus">
         <rdfs:comment>Map Variables from TILES-2018 and Multimodal Analysis Papers</rdfs:comment>
         <rdfs:label>TGN10+</rdfs:label>
@@ -17,15 +18,40 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3id.org/TGN10Plus#hasReference -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3id.org/TGN10Plus#hasReference">
+        <rdfs:comment>Life satisfaction (SWLS) The Satisfaction with Life Scale (SWLS) was a 5-item measure that aims to assess participants’ general satisfaction with life. Participants rated the degree to which they agree with each statement on a scale of 1 (strongly disagree) to 7 (strongly agree). A total score was obtained by taking the average of the 5 items [1].</rdfs:comment>
+        <rdfs:label>has reference</rdfs:label>
+        <hasReference>[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#hasAge -->
+
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasAge">
         <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
@@ -36,6 +62,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#hasGender -->
 
+
     <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasGender">
         <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#Gender"/>
         <rdfs:label>has gender</rdfs:label>
@@ -44,6 +71,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#hasHighestDegree -->
+
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasHighestDegree">
         <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#HighestDegree"/>
@@ -54,6 +82,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#hasMeanAge -->
 
+
     <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasMeanAge">
         <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#MeanAge"/>
         <rdfs:label>has mean age</rdfs:label>
@@ -62,6 +91,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#hasNativeLanguage -->
+
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/TGN10Plus#hasNativeLanguage">
         <rdfs:range rdf:resource="http://www.w3id.org/TGN10Plus#NativeLanguage"/>
@@ -78,10 +108,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#Age -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Age">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
@@ -92,14 +124,19 @@
 
     <!-- http://www.w3id.org/TGN10Plus#BFI-2 -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#BFI-2">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:comment>Personality (BFI-2) Personality was evaluated using the Big Five Inventory-2 (BFI-2) [30]. Five different aspects of personality were measured, all in a range between 1 and 5: 1. Neuroticism; 2. Conscientiousness; 3. Extraver- sion; 4. Agreeableness; 5. Open-Mindedness [1].</rdfs:comment>
         <rdfs:label>Personality (BFI-2)</rdfs:label>
+        <hasReference>[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
+        <hasReference>[30] ﻿Soto, C. J. &amp; John, O. P. The next big five inventory (bfi-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power. J. Personal. Soc. Psychol. 113, 117 (2017).</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#Behavioral -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Behavioral">
         <rdfs:label>Behavioral</rdfs:label>
@@ -109,22 +146,35 @@
 
     <!-- http://www.w3id.org/TGN10Plus#Demographic -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Demographic">
+        <rdfs:comment>Demographics (DEMO): Participants completed a brief demographics survey which assessed sex, age, place of birth, English as the native language, education level, and job related demographics (e.g., full-time or part- time, industry, tenure in the organization, and income) [1].</rdfs:comment>
         <rdfs:label>Demographic</rdfs:label>
+        <hasReference>[1] ﻿Karel Mundnich, Brandon M Booth, Michelle l’Hommedieu, Tiantian Feng, Benjamin Girault, Justin L’hommedieu, Mackenzie Wildman, Sophia Skaaden, Amrutha Nadarajan, Jennifer L Villatte, et al. 2020. TILES-2018, a longitudinal ﻿physiologic and behavioral data set of hospital workers. Scientific Data 7, 1 (2020), 354.</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#EMA -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#EMA">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:comment>Ecological momentary assessments. The EMAs were administered via text message on a daily basis throughout the study period and asked participants about affect, anxiety, and stress. Participants received a push notification when the EMAs were delivered and again 30 min before it expired if it had not yet been completed. The EMAs were sent on each day throughout the study period. Day shift workers received these surveys at either 6:00 h, 12:00 h, or 18:00 h each day. Night shift workers received these surveys at either 18:00 h, 0:00 h, or 6:00 h each day. Each survey had 6 h window to complete before it expired [1].
+
+Stress. The EMAs asked participants to rate their current stress level using the following five-point scale: 1 (No stress at all), 2 (Very little stress), 3 (Some stress), 4 (A lot of stress), 5 (A great deal of stress) [1].
+
+Anxiety. Participants were asked to rate their current anxiety level from EMAs on a scale ranging from 1 (Not at all anxious) to 5 (Extremely anxious) [1].
+
+Affect. The EMAs contained a short version of the PANAS questionnaire to measure affect [32]. The PANAS-Short consisted of 5 items for PA and NA, both with scores ranging from 5 to 25 where higher scores indicating higher affective valence [1].</rdfs:comment>
         <rdfs:label>Ecological Momentary Assessments (EMA)</rdfs:label>
+        <hasReference>[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#Gender -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Gender">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
@@ -135,14 +185,25 @@
 
     <!-- http://www.w3id.org/TGN10Plus#HeartRate -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#HeartRate">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Physiological"/>
+        <rdfs:comment>The physical activity was calculated through the PPG-based heart rate and step count data readings where data preprocessing was based upon previous work [34]. PPG-based heart rate measurements were averaged within each minute interval and then used to compute the intensity of physical activity for each participant. The activity intensity was based on each individual’s estimated maximum heart rate from the equation shown below [35]: HR_max = 220 − Age. 
+
+[1] categorized the minute-level heart rate readings into 3 types based on [35], [36]: (1) Rest activity zone (heart rate is below 50% of its maximum); (2) Moderate activity zone (heart rate is 50% to 69% to its maximum); (3) Vigorous activity zone (heart rate is 70% to 84% to its maximum). [1] ignored the heart rate values above 85% to its maximum since the available sample size is small ( &lt; 1% ). The proportion of time spent in each of these three different activity types was used to compare the behavioral differences between day shift and night shift nurses.
+
+A walk activity ratio was also defined on the same time scale as the heart rate measurements. This ratio was defined as the total number of minutes with a step count above zero divided by total recorded number of minutes. In addition, the walk activity ratio was separately computed within 6 time periods during the day for further analysis of the dynamics of this behavior. These time periods were: (1) 23:00 h–3:00 h; (2) 3:00 h–7:00 h; (3) 7:00 h 11:00 h; (4) 11:00 h–15:00 h; (5) 15:00 h–19:00 h; (6) 19:00 h–23:00 h.</rdfs:comment>
         <rdfs:label>Heart Rate</rdfs:label>
+        <hasReference>[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
+        <hasReference>[34] ﻿Feng, T. &amp; Narayanan, S. S. Discovering optimal variable-length time series motifs in large-scale wearable recordings of human bio-behavioral signals. In ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 7615–7619 (IEEE, 2019).</hasReference>
+        <hasReference>[35] ﻿Piercy, K. L. et al. The physical activity guidelines for Americans. JAMA 320, 2020–2028 (2018).</hasReference>
+        <hasReference>[36] ﻿Karvonen, J. &amp; Vuorimaa, T. Heart rate and exercise intensity during sports activities. Sports Med. 5, 303–311 (1988).</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#HighestDegree -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#HighestDegree">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
@@ -153,6 +214,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#MSF -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#MSF">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
         <rdfs:label>Mid-Sleep Time on Off Days</rdfs:label>
@@ -161,6 +223,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#MSW -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#MSW">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
@@ -171,6 +234,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#MeanAge -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#MeanAge">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
         <rdfs:label>Mean Age</rdfs:label>
@@ -179,6 +243,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#ModerateActivityZone -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#ModerateActivityZone">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
@@ -189,6 +254,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#NativeLanguage -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#NativeLanguage">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Demographic"/>
         <rdfs:label>Native Language</rdfs:label>
@@ -197,6 +263,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#OverVigorousActivityZone -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#OverVigorousActivityZone">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
@@ -207,24 +274,32 @@
 
     <!-- http://www.w3id.org/TGN10Plus#PANAS -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#PANAS">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
-        <rdfs:comment>Positive and negative affect schedule (PANAS) The PANAS [29] was used to measure level of the positive affect (PA) and negative affect (NA). The PANAS consisted of 10 PA items and 10 NA items, with each item on a scale ranging from 1 to 5. PA and NA scores were calculated by summing individual item responses within each group (PA and NA), with higher scores representing higher levels of corresponding affect.</rdfs:comment>
+        <rdfs:comment>Positive and negative affect schedule (PANAS) The PANAS [29] was used to measure level of the positive affect (PA) and negative affect (NA). The PANAS consisted of 10 PA items and 10 NA items, with each item on a scale ranging from 1 to 5. PA and NA scores were calculated by summing individual item responses within each group (PA and NA), with higher scores representing higher levels of corresponding affect [1].</rdfs:comment>
         <rdfs:label>Affect (PANAS)</rdfs:label>
+        <hasReference>[1] ﻿Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
+        <hasReference>[29] Watson, D. &amp; Clark, L. A. The panas-x: Manual for the positive and negative affect schedule-expanded form (Publ, Psychol, 1999).</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#PSQI -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#PSQI">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:comment>Pittsburgh Sleep Quality Index (PSQI) The baseline surveys used the PSQI to assess sleep quality [31]. This survey contains 19 items to evaluate seven different aspects of sleep. Participants responded to items relating to each aspect on a scale ranging from 0 to 3, with higher scores indicating poorer sleep quality. The final score is obtained by summing the items and ranges from 0 to 21 [1].</rdfs:comment>
         <rdfs:label>Sleep Quality (PSQI)</rdfs:label>
+        <hasReference>[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
+        <hasReference>[31] ﻿Buysse, D. J., Reynolds, C. F. III., Monk, T. H., Berman, S. R. &amp; Kupfer, D. J. The pittsburgh sleep quality index: A new instrument for psychiatric practice and research. Psychiatry Res. 28, 193–213 (1989).</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#Physiological -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Physiological">
         <rdfs:label>Physiological</rdfs:label>
@@ -233,6 +308,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#RestActivityZone -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#RestActivityZone">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
@@ -243,32 +319,44 @@
 
     <!-- http://www.w3id.org/TGN10Plus#STAI -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#STAI">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:comment>Anxiety (STAI) Anxiety measured using the State-Trait Anxiety Inventory (STAI) [28]. It was scored by adding sum responses, obtaining a value in the range 20 to 80, with higher scores indicating greater anxiety [1].</rdfs:comment>
         <rdfs:label>Anxiety (STAI)</rdfs:label>
+        <hasReference>[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693</hasReference>
+        <hasReference>[28] Spielberger, C. D. &amp; Gorsuch, R. L. State-trait anxiety inventory for adults: sampler set: manual, test, scoring key (Mind Garden, 1983).</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#SWLS -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SWLS">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Behavioral"/>
+        <rdfs:comment>Life satisfaction (SWLS) The Satisfaction with Life Scale (SWLS) was a 5-item measure that aims to assess participants’ general satisfaction with life. Participants rated the degree to which they agree with each statement on a scale of 1 (strongly disagree) to 7 (strongly agree). A total score was obtained by taking the average of the 5 items [1].</rdfs:comment>
         <rdfs:label>Life Satisfaction (SWLS)</rdfs:label>
+        <hasReference>[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#Sleep -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Sleep">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Physiological"/>
+        <rdfs:comment>The Fitbit devices provided a set of processed signal features related to sleep, which included sleep onset time, wake up time, sleep duration, and sleep efficiency. Similar to the feature extraction of the physical activity pattern, [1] aggregated these sleep-related features on workdays and off days. Moreover, [1] defined the measure of social jet lag as the differences between mid-sleep time on workdays (MSW) and mid-sleep time on free days (MSF) [16]. The social jet lag can be chronic through adult life and results in a range of illnesses, and quantifying social jet lag can be helpful to understand the circadian misalignment of an individual. More specifically, [1] computed the social jet lag (MS) as: \Delta MS =|MSW − MSF|</rdfs:comment>
         <rdfs:label>Sleep</rdfs:label>
+        <hasReference>[16] ﻿Wittmann, M., Dinich, J., Merrow, M. &amp; Roenneberg, T. Social jetlag: Misalignment of biological and social time. Chronobiol. Int. 23, 497–509 (2006).</hasReference>
+        <hasReference>[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.</hasReference>
     </owl:Class>
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#SleepDuration -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SleepDuration">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
@@ -279,6 +367,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#SleepEfficiency -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SleepEfficiency">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
         <rdfs:label>Sleep Efficiency</rdfs:label>
@@ -287,6 +376,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#SleepOnsetTime -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#SleepOnsetTime">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
@@ -297,6 +387,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#Time -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#Time">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
         <rdfs:label>Time</rdfs:label>
@@ -306,6 +397,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#VigorousActivityZone -->
 
+
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#VigorousActivityZone">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#HeartRate"/>
         <rdfs:label>Vigorous Activity Zone</rdfs:label>
@@ -314,6 +406,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#WakeUpTime -->
+
 
     <owl:Class rdf:about="http://www.w3id.org/TGN10Plus#WakeUpTime">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/TGN10Plus#Sleep"/>
@@ -330,10 +423,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3id.org/TGN10Plus#College -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#College">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#HighestDegree"/>
@@ -344,6 +439,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#EMAAnxiety -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMAAnxiety">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
         <rdfs:label>EMA Anxiety</rdfs:label>
@@ -352,6 +448,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#EMANegativeAffect -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMANegativeAffect">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
@@ -362,6 +459,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#EMAPositiveAffect -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMAPositiveAffect">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
         <rdfs:label>EMA Positive Affect</rdfs:label>
@@ -370,6 +468,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#EMAStress -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#EMAStress">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#EMA"/>
@@ -380,6 +479,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#English -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#English">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#NativeLanguage"/>
         <rdfs:label>English</rdfs:label>
@@ -388,6 +488,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#Graduate -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#Graduate">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#HighestDegree"/>
@@ -398,6 +499,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#NegativeAffect -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#NegativeAffect">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#PANAS"/>
         <rdfs:label>Negative Affect</rdfs:label>
@@ -406,6 +508,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#NonEnglish -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#NonEnglish">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#NativeLanguage"/>
@@ -416,6 +519,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#PositiveAffect -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#PositiveAffect">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#PANAS"/>
         <rdfs:label>Positive Affect</rdfs:label>
@@ -424,6 +528,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#SocialJetLag -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#SocialJetLag">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#MSF"/>
@@ -435,6 +540,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#T03-07 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T03-07">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
         <rdfs:label>3:00 h - 7:00 h</rdfs:label>
@@ -443,6 +549,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#T07-11 -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T07-11">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
@@ -453,6 +560,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#T11-15 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T11-15">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
         <rdfs:label>11:00 h - 15:00 h</rdfs:label>
@@ -461,6 +569,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#T15-19 -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T15-19">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
@@ -471,6 +580,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#T19-23 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T19-23">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
         <rdfs:label>19:00 h - 23:00 h</rdfs:label>
@@ -479,6 +589,7 @@
 
 
     <!-- http://www.w3id.org/TGN10Plus#T23-03 -->
+
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#T23-03">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Time"/>
@@ -489,6 +600,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#lessThan40 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#lessThan40">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
         <rdfs:label>&gt;= 40</rdfs:label>
@@ -498,6 +610,7 @@
 
     <!-- http://www.w3id.org/TGN10Plus#40orMore -->
 
+
     <owl:NamedIndividual rdf:about="http://www.w3id.org/TGN10Plus#40orMore">
         <rdf:type rdf:resource="http://www.w3id.org/TGN10Plus#Age"/>
         <rdfs:label>&lt; 40</rdfs:label>
@@ -506,5 +619,6 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
 

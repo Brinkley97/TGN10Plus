@@ -1,0 +1,981 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3id.org/TGN10Plus", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.w3id.org/TGN10Plus",
+    "version" : "1.0",
+    "labels" : {
+      "undefined" : "TGN10+"
+    },
+    "comments" : {
+      "undefined" : "Map Variables from TILES-2018 and Multimodal Analysis Papers"
+    },
+    "other" : {
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "51",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "59",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3id.org/TGN10Plus#Behavioral",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Behavioral",
+      "undefined" : "Behavioral"
+    },
+    "subClasses" : [ "1", "2", "3", "4", "5", "6" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#HighestDegree",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighestDegree",
+      "undefined" : "Highest Degree"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#College",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "College",
+        "undefined" : "College"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#Graduate",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "Graduate",
+        "undefined" : "Graduate"
+      }
+    } ],
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#NativeLanguage",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NativeLanguage",
+      "undefined" : "Native Language"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#English",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "English",
+        "undefined" : "English"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#NonEnglish",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "NonEnglish",
+        "undefined" : "Non-English"
+      }
+    } ],
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#EMA",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMA",
+      "undefined" : "Ecological Momentary Assessments (EMA)"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#EMAAnxiety",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "EMAAnxiety",
+        "undefined" : "EMA Anxiety"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#EMAStress",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "EMAStress",
+        "undefined" : "EMA Stress"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#EMANegativeAffect",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "EMANegativeAffect",
+        "undefined" : "EMA Negative Affect"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#EMAPositiveAffect",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "EMAPositiveAffect",
+        "undefined" : "EMA Positive Affect"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Ecological momentary assessments. The EMAs were administered via text message on a daily basis throughout the study period and asked participants about affect, anxiety, and stress. Participants received a push notification when the EMAs were delivered and again 30 min before it expired if it had not yet been completed. The EMAs were sent on each day throughout the study period. Day shift workers received these surveys at either 6:00 h, 12:00 h, or 18:00 h each day. Night shift workers received these surveys at either 18:00 h, 0:00 h, or 6:00 h each day. Each survey had 6 h window to complete before it expired [1].\n\nStress. The EMAs asked participants to rate their current stress level using the following five-point scale: 1 (No stress at all), 2 (Very little stress), 3 (Some stress), 4 (A lot of stress), 5 (A great deal of stress) [1].\n\nAnxiety. Participants were asked to rate their current anxiety level from EMAs on a scale ranging from 1 (Not at all anxious) to 5 (Extremely anxious) [1].\n\nAffect. The EMAs contained a short version of the PANAS questionnaire to measure affect [32]. The PANAS-Short consisted of 5 items for PA and NA, both with scores ranging from 5 to 25 where higher scores indicating higher affective valence [1]."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#BFI-2",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[30] ﻿Soto, C. J. & John, O. P. The next big five inventory (bfi-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power. J. Personal. Soc. Psychol. 113, 117 (2017).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFI-2",
+      "undefined" : "Personality (BFI-2)"
+    },
+    "comment" : {
+      "undefined" : "Personality (BFI-2) Personality was evaluated using the Big Five Inventory-2 (BFI-2) [30]. Five different aspects of personality were measured, all in a range between 1 and 5: 1. Neuroticism; 2. Conscientiousness; 3. Extraver- sion; 4. Agreeableness; 5. Open-Mindedness [1]."
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#STAI",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[28] Spielberger, C. D. & Gorsuch, R. L. State-trait anxiety inventory for adults: sampler set: manual, test, scoring key (Mind Garden, 1983).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "STAI",
+      "undefined" : "Anxiety (STAI)"
+    },
+    "comment" : {
+      "undefined" : "Anxiety (STAI) Anxiety measured using the State-Trait Anxiety Inventory (STAI) [28]. It was scored by adding sum responses, obtaining a value in the range 20 to 80, with higher scores indicating greater anxiety [1]."
+    },
+    "id" : "6",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#OverVigorousActivityZone",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OverVigorousActivityZone",
+      "undefined" : "Over Vigorous Activity Zone"
+    },
+    "id" : "16",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#RestActivityZone",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestActivityZone",
+      "undefined" : "Rest Activity Zone"
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#SleepDuration",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SleepDuration",
+      "undefined" : "Sleep Duration"
+    },
+    "id" : "30",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#HeartRate",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[36] ﻿Karvonen, J. & Vuorimaa, T. Heart rate and exercise intensity during sports activities. Sports Med. 5, 303–311 (1988).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[34] ﻿Feng, T. & Narayanan, S. S. Discovering optimal variable-length time series motifs in large-scale wearable recordings of human bio-behavioral signals. In ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 7615–7619 (IEEE, 2019).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[35] ﻿Piercy, K. L. et al. The physical activity guidelines for Americans. JAMA 320, 2020–2028 (2018).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeartRate",
+      "undefined" : "Heart Rate"
+    },
+    "subClasses" : [ "16", "14", "20", "18", "11" ],
+    "comment" : {
+      "undefined" : "The physical activity was calculated through the PPG-based heart rate and step count data readings where data preprocessing was based upon previous work [34]. PPG-based heart rate measurements were averaged within each minute interval and then used to compute the intensity of physical activity for each participant. The activity intensity was based on each individual’s estimated maximum heart rate from the equation shown below [35]: HR_max = 220 − Age. \n\n[1] categorized the minute-level heart rate readings into 3 types based on [35], [36]: (1) Rest activity zone (heart rate is below 50% of its maximum); (2) Moderate activity zone (heart rate is 50% to 69% to its maximum); (3) Vigorous activity zone (heart rate is 70% to 84% to its maximum). [1] ignored the heart rate values above 85% to its maximum since the available sample size is small ( < 1% ). The proportion of time spent in each of these three different activity types was used to compare the behavioral differences between day shift and night shift nurses.\n\nA walk activity ratio was also defined on the same time scale as the heart rate measurements. This ratio was defined as the total number of minutes with a step count above zero divided by total recorded number of minutes. In addition, the walk activity ratio was separately computed within 6 time periods during the day for further analysis of the dynamics of this behavior. These time periods were: (1) 23:00 h–3:00 h; (2) 3:00 h–7:00 h; (3) 7:00 h 11:00 h; (4) 11:00 h–15:00 h; (5) 15:00 h–19:00 h; (6) 19:00 h–23:00 h."
+    },
+    "id" : "12",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#MeanAge",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeanAge",
+      "undefined" : "Mean Age"
+    },
+    "id" : "39",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#WakeUpTime",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WakeUpTime",
+      "undefined" : "Wake Up Time"
+    },
+    "id" : "34",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#PSQI",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[31] ﻿Buysse, D. J., Reynolds, C. F. III., Monk, T. H., Berman, S. R. & Kupfer, D. J. The pittsburgh sleep quality index: A new instrument for psychiatric practice and research. Psychiatry Res. 28, 193–213 (1989).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PSQI",
+      "undefined" : "Sleep Quality (PSQI)"
+    },
+    "comment" : {
+      "undefined" : "Pittsburgh Sleep Quality Index (PSQI) The baseline surveys used the PSQI to assess sleep quality [31]. This survey contains 19 items to evaluate seven different aspects of sleep. Participants responded to items relating to each aspect on a scale ranging from 0 to 3, with higher scores indicating poorer sleep quality. The final score is obtained by summing the items and ranges from 0 to 21 [1]."
+    },
+    "id" : "5",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#Time",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Time",
+      "undefined" : "Time"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#T19-23",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "T19-23",
+        "undefined" : "19:00 h - 23:00 h"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#T23-03",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "T23-03",
+        "undefined" : "23:00 h - 3:00 h"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#T07-11",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "T07-11",
+        "undefined" : "7:00 h - 11:00 h"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#T15-19",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "T15-19",
+        "undefined" : "15:00 h - 19:00 h"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#T11-15",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "T11-15",
+        "undefined" : "11:00 h - 15:00 h"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#T03-07",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "T03-07",
+        "undefined" : "3:00 h - 7:00 h"
+      }
+    } ],
+    "id" : "18",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#SWLS",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SWLS",
+      "undefined" : "Life Satisfaction (SWLS)"
+    },
+    "comment" : {
+      "undefined" : "Life satisfaction (SWLS) The Satisfaction with Life Scale (SWLS) was a 5-item measure that aims to assess participants’ general satisfaction with life. Participants rated the degree to which they agree with each statement on a scale of 1 (strongly disagree) to 7 (strongly agree). A total score was obtained by taking the average of the 5 items [1]."
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#MSF",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MSF",
+      "undefined" : "Mid-Sleep Time on Off Days"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#SocialJetLag",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "SocialJetLag",
+        "undefined" : "Social Jet Lag"
+      }
+    } ],
+    "id" : "41",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#ModerateActivityZone",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModerateActivityZone",
+      "undefined" : "Moderate Activity Zone"
+    },
+    "id" : "20",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#SleepEfficiency",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SleepEfficiency",
+      "undefined" : "Sleep Efficiency"
+    },
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "27",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "51",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#Age",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Age",
+      "undefined" : "Age"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#40orMore",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "40orMore",
+        "undefined" : "< 40"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#lessThan40",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "lessThan40",
+        "undefined" : ">= 40"
+      }
+    } ],
+    "subClasses" : [ "39" ],
+    "id" : "38",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#Physiological",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Physiological",
+      "undefined" : "Physiological"
+    },
+    "subClasses" : [ "25", "12" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#MSW",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MSW",
+      "undefined" : "Mid-Sleep Time on Work Days"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#SocialJetLag",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "SocialJetLag",
+        "undefined" : "Social Jet Lag"
+      }
+    } ],
+    "id" : "44",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#Demographic",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] ﻿Karel Mundnich, Brandon M Booth, Michelle l’Hommedieu, Tiantian Feng, Benjamin Girault, Justin L’hommedieu, Mackenzie Wildman, Sophia Skaaden, Amrutha Nadarajan, Jennifer L Villatte, et al. 2020. TILES-2018, a longitudinal ﻿physiologic and behavioral data set of hospital workers. Scientific Data 7, 1 (2020), 354.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Demographic",
+      "undefined" : "Demographic"
+    },
+    "subClasses" : [ "7", "9", "28", "38" ],
+    "comment" : {
+      "undefined" : "Demographics (DEMO): Participants completed a brief demographics survey which assessed sex, age, place of birth, English as the native language, education level, and job related demographics (e.g., full-time or part- time, industry, tenure in the organization, and income) [1]."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#Sleep",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[16] ﻿Wittmann, M., Dinich, J., Merrow, M. & Roenneberg, T. Social jetlag: Misalignment of biological and social time. Chronobiol. Int. 23, 497–509 (2006).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sleep",
+      "undefined" : "Sleep"
+    },
+    "subClasses" : [ "41", "44", "30", "24", "34", "32" ],
+    "comment" : {
+      "undefined" : "The Fitbit devices provided a set of processed signal features related to sleep, which included sleep onset time, wake up time, sleep duration, and sleep efficiency. Similar to the feature extraction of the physical activity pattern, [1] aggregated these sleep-related features on workdays and off days. Moreover, [1] defined the measure of social jet lag as the differences between mid-sleep time on workdays (MSW) and mid-sleep time on free days (MSF) [16]. The social jet lag can be chronic through adult life and results in a range of illnesses, and quantifying social jet lag can be helpful to understand the circadian misalignment of an individual. More specifically, [1] computed the social jet lag (MS) as: \\Delta MS =|MSW − MSF|"
+    },
+    "id" : "25",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "59",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#SleepOnsetTime",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SleepOnsetTime",
+      "undefined" : "Sleep Onset Time"
+    },
+    "id" : "32",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#PANAS",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "annotations" : {
+      "hasReference" : [ {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[29] Watson, D. & Clark, L. A. The panas-x: Manual for the positive and negative affect schedule-expanded form (Publ, Psychol, 1999).",
+        "type" : "label"
+      }, {
+        "identifier" : "hasReference",
+        "language" : "undefined",
+        "value" : "[1] ﻿Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PANAS",
+      "undefined" : "Affect (PANAS)"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/TGN10Plus#PositiveAffect",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "PositiveAffect",
+        "undefined" : "Positive Affect"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/TGN10Plus#NegativeAffect",
+      "baseIri" : "http://www.w3id.org/TGN10Plus",
+      "labels" : {
+        "IRI-based" : "NegativeAffect",
+        "undefined" : "Negative Affect"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Positive and negative affect schedule (PANAS) The PANAS [29] was used to measure level of the positive affect (PA) and negative affect (NA). The PANAS consisted of 10 PA items and 10 NA items, with each item on a scale ranging from 1 to 5. PA and NA scores were calculated by summing individual item responses within each group (PA and NA), with higher scores representing higher levels of corresponding affect [1]."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#VigorousActivityZone",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VigorousActivityZone",
+      "undefined" : "Vigorous Activity Zone"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#Gender",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gender",
+      "undefined" : "Gender"
+    },
+    "id" : "28",
+    "superClasses" : [ "8" ]
+  } ],
+  "property" : [ {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "12",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#hasHighestDegree",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasHighestDegree",
+      "undefined" : "has highest degree"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#hasGender",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasGender",
+      "undefined" : "has gender"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "25",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "25",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "25",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#hasAge",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasAge",
+      "undefined" : "has age"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "range" : "25",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "8",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "25",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "35",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "8",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#hasMeanAge",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasMeanAge",
+      "undefined" : "has mean age"
+    },
+    "domain" : "51",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "35",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "38",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "0",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.w3id.org/TGN10Plus#hasNativeLanguage",
+    "baseIri" : "http://www.w3id.org/TGN10Plus",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasNativeLanguage",
+      "undefined" : "has native language"
+    },
+    "domain" : "59",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  } ]
+}

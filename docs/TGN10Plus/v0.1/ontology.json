@@ -1,0 +1,489 @@
+[ {
+  "@id" : "http://www.w3id.org/TGN10Plus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Map Variables from TILES-2018 and Multimodal Analysis Papers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TGN10+"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#40orMore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Age" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "< 40"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Demographic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#BFI-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Personality (BFI-2) Personality was evaluated using the Big Five Inventory-2 (BFI-2) [30]. Five different aspects of personality were measured, all in a range between 1 and 5: 1. Neuroticism; 2. Conscientiousness; 3. Extraver- sion; 4. Agreeableness; 5. Open-Mindedness [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Personality (BFI-2)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Behavioral"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  }, {
+    "@value" : "[30] ﻿Soto, C. J. & John, O. P. The next big five inventory (bfi-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power. J. Personal. Soc. Psychol. 113, 117 (2017)."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Behavioral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Behavioral"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#College",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#HighestDegree" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "College"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Demographic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Demographics (DEMO): Participants completed a brief demographics survey which assessed sex, age, place of birth, English as the native language, education level, and job related demographics (e.g., full-time or part- time, industry, tenure in the organization, and income) [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Demographic"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1] ﻿Karel Mundnich, Brandon M Booth, Michelle l’Hommedieu, Tiantian Feng, Benjamin Girault, Justin L’hommedieu, Mackenzie Wildman, Sophia Skaaden, Amrutha Nadarajan, Jennifer L Villatte, et al. 2020. TILES-2018, a longitudinal ﻿physiologic and behavioral data set of hospital workers. Scientific Data 7, 1 (2020), 354."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#EMA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ecological momentary assessments. The EMAs were administered via text message on a daily basis throughout the study period and asked participants about affect, anxiety, and stress. Participants received a push notification when the EMAs were delivered and again 30 min before it expired if it had not yet been completed. The EMAs were sent on each day throughout the study period. Day shift workers received these surveys at either 6:00 h, 12:00 h, or 18:00 h each day. Night shift workers received these surveys at either 18:00 h, 0:00 h, or 6:00 h each day. Each survey had 6 h window to complete before it expired [1].\n\nStress. The EMAs asked participants to rate their current stress level using the following five-point scale: 1 (No stress at all), 2 (Very little stress), 3 (Some stress), 4 (A lot of stress), 5 (A great deal of stress) [1].\n\nAnxiety. Participants were asked to rate their current anxiety level from EMAs on a scale ranging from 1 (Not at all anxious) to 5 (Extremely anxious) [1].\n\nAffect. The EMAs contained a short version of the PANAS questionnaire to measure affect [32]. The PANAS-Short consisted of 5 items for PA and NA, both with scores ranging from 5 to 25 where higher scores indicating higher affective valence [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ecological Momentary Assessments (EMA)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Behavioral"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#EMAAnxiety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#EMA" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EMA Anxiety"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#EMANegativeAffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#EMA" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EMA Negative Affect"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#EMAPositiveAffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#EMA" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EMA Positive Affect"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#EMAStress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#EMA" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EMA Stress"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#English",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#NativeLanguage" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "English"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Demographic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Graduate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#HighestDegree" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Graduate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#HeartRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The physical activity was calculated through the PPG-based heart rate and step count data readings where data preprocessing was based upon previous work [34]. PPG-based heart rate measurements were averaged within each minute interval and then used to compute the intensity of physical activity for each participant. The activity intensity was based on each individual’s estimated maximum heart rate from the equation shown below [35]: HR_max = 220 − Age. \n\n[1] categorized the minute-level heart rate readings into 3 types based on [35], [36]: (1) Rest activity zone (heart rate is below 50% of its maximum); (2) Moderate activity zone (heart rate is 50% to 69% to its maximum); (3) Vigorous activity zone (heart rate is 70% to 84% to its maximum). [1] ignored the heart rate values above 85% to its maximum since the available sample size is small ( < 1% ). The proportion of time spent in each of these three different activity types was used to compare the behavioral differences between day shift and night shift nurses.\n\nA walk activity ratio was also defined on the same time scale as the heart rate measurements. This ratio was defined as the total number of minutes with a step count above zero divided by total recorded number of minutes. In addition, the walk activity ratio was separately computed within 6 time periods during the day for further analysis of the dynamics of this behavior. These time periods were: (1) 23:00 h–3:00 h; (2) 3:00 h–7:00 h; (3) 7:00 h 11:00 h; (4) 11:00 h–15:00 h; (5) 15:00 h–19:00 h; (6) 19:00 h–23:00 h."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Heart Rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Physiological"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  }, {
+    "@value" : "[34] ﻿Feng, T. & Narayanan, S. S. Discovering optimal variable-length time series motifs in large-scale wearable recordings of human bio-behavioral signals. In ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 7615–7619 (IEEE, 2019)."
+  }, {
+    "@value" : "[35] ﻿Piercy, K. L. et al. The physical activity guidelines for Americans. JAMA 320, 2020–2028 (2018)."
+  }, {
+    "@value" : "[36] ﻿Karvonen, J. & Vuorimaa, T. Heart rate and exercise intensity during sports activities. Sports Med. 5, 303–311 (1988)."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#HighestDegree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Highest Degree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Demographic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#MSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mid-Sleep Time on Off Days"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Sleep"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#MSW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mid-Sleep Time on Work Days"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Sleep"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#MeanAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mean Age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Age"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#ModerateActivityZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Moderate Activity Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#HeartRate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#NativeLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Native Language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Demographic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#NegativeAffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#PANAS" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Negative Affect"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#NonEnglish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#NativeLanguage" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Non-English"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#OverVigorousActivityZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Over Vigorous Activity Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#HeartRate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#PANAS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Positive and negative affect schedule (PANAS) The PANAS [29] was used to measure level of the positive affect (PA) and negative affect (NA). The PANAS consisted of 10 PA items and 10 NA items, with each item on a scale ranging from 1 to 5. PA and NA scores were calculated by summing individual item responses within each group (PA and NA), with higher scores representing higher levels of corresponding affect [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Affect (PANAS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Behavioral"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1] ﻿Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  }, {
+    "@value" : "[29] Watson, D. & Clark, L. A. The panas-x: Manual for the positive and negative affect schedule-expanded form (Publ, Psychol, 1999)."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#PSQI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pittsburgh Sleep Quality Index (PSQI) The baseline surveys used the PSQI to assess sleep quality [31]. This survey contains 19 items to evaluate seven different aspects of sleep. Participants responded to items relating to each aspect on a scale ranging from 0 to 3, with higher scores indicating poorer sleep quality. The final score is obtained by summing the items and ranges from 0 to 21 [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sleep Quality (PSQI)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Behavioral"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  }, {
+    "@value" : "[31] ﻿Buysse, D. J., Reynolds, C. F. III., Monk, T. H., Berman, S. R. & Kupfer, D. J. The pittsburgh sleep quality index: A new instrument for psychiatric practice and research. Psychiatry Res. 28, 193–213 (1989)."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Physiological",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Physiological"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#PositiveAffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#PANAS" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Positive Affect"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#RestActivityZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rest Activity Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#HeartRate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#STAI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anxiety (STAI) Anxiety measured using the State-Trait Anxiety Inventory (STAI) [28]. It was scored by adding sum responses, obtaining a value in the range 20 to 80, with higher scores indicating greater anxiety [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anxiety (STAI)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Behavioral"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693"
+  }, {
+    "@value" : "[28] Spielberger, C. D. & Gorsuch, R. L. State-trait anxiety inventory for adults: sampler set: manual, test, scoring key (Mind Garden, 1983)."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#SWLS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Life satisfaction (SWLS) The Satisfaction with Life Scale (SWLS) was a 5-item measure that aims to assess participants’ general satisfaction with life. Participants rated the degree to which they agree with each statement on a scale of 1 (strongly disagree) to 7 (strongly agree). A total score was obtained by taking the average of the 5 items [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Life Satisfaction (SWLS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Behavioral"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Sleep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Fitbit devices provided a set of processed signal features related to sleep, which included sleep onset time, wake up time, sleep duration, and sleep efficiency. Similar to the feature extraction of the physical activity pattern, [1] aggregated these sleep-related features on workdays and off days. Moreover, [1] defined the measure of social jet lag as the differences between mid-sleep time on workdays (MSW) and mid-sleep time on free days (MSF) [16]. The social jet lag can be chronic through adult life and results in a range of illnesses, and quantifying social jet lag can be helpful to understand the circadian misalignment of an individual. More specifically, [1] computed the social jet lag (MS) as: \\Delta MS =|MSW − MSF|"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sleep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Physiological"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[16] ﻿Wittmann, M., Dinich, J., Merrow, M. & Roenneberg, T. Social jetlag: Misalignment of biological and social time. Chronobiol. Int. 23, 497–509 (2006)."
+  }, {
+    "@value" : "[1] Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#SleepDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sleep Duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Sleep"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#SleepEfficiency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sleep Efficiency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Sleep"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#SleepOnsetTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sleep Onset Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Sleep"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#SocialJetLag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#MSF", "http://www.w3id.org/TGN10Plus#MSW" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Social Jet Lag"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#T03-07",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "3:00 h - 7:00 h"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#T07-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "7:00 h - 11:00 h"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#T11-15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "11:00 h - 15:00 h"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#T15-19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "15:00 h - 19:00 h"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#T19-23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "19:00 h - 23:00 h"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#T23-03",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "23:00 h - 3:00 h"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#HeartRate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#VigorousActivityZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vigorous Activity Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#HeartRate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#WakeUpTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wake Up Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Sleep"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#hasAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Age"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#hasGender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has gender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#Gender"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#hasHighestDegree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has highest degree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#HighestDegree"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#hasMeanAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has mean age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#MeanAge"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#hasNativeLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has native language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/TGN10Plus#NativeLanguage"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#hasReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Life satisfaction (SWLS) The Satisfaction with Life Scale (SWLS) was a 5-item measure that aims to assess participants’ general satisfaction with life. Participants rated the degree to which they agree with each statement on a scale of 1 (strongly disagree) to 7 (strongly agree). A total score was obtained by taking the average of the 5 items [1]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has reference"
+  } ],
+  "http://www.w3id.org/TGN10Plus#hasReference" : [ {
+    "@value" : "[1]﻿ Tiantian Feng, Brandon M Booth, Brooke Baldwin-Rodríguez, Felipe Osorno, and Shrikanth Narayanan. 2021. A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data. Scientific reports 11, 1 (2021), 8693."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/TGN10Plus#lessThan40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/TGN10Plus#Age" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : ">= 40"
+  } ]
+} ]
