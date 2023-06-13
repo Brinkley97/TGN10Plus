@@ -18,25 +18,26 @@
 ## How to use software and Requirements
 - To use this software, you can clone/fork the repository. Once you do this, ensure that you have installed the following coding languages, libraries and packages. We also include the version we're using but have not tested our code on updated versions. To find a specific analysis, navigate to that file and run all cells. 
    - `rpy2` (3.5.4) to integrate python and R
-   - `python` (3.7.5), reproduceTable1.ipynb
-      - `pandas` (1.0.5), reproduceTable1.ipynb
-      - `scipy` (1.1.0)
-      - `statsmodels` ()
-      - `pingouin` ()
-   - `R` ()
-      - `anova` ()
-      - `ols` ()
-      - `lmer` ()
-      - `emmeans` ()
-      - `PostHocTest` ()
-      - `ezANOVA` ()
-    - generateSpecificQuestions.ipynb: python
-    -  reproduceTable1.ipynb: python, pandas, numpy, pingouin, scipy
-    -  reproduceTable2.ipynb: python, pandas, numpy, rpy2, aov
-    -  reproduceTable4.ipynb: python, pandas, numpy, rpy2, aov
-    -  reproduceFigure1.ipynb: python, pandas, numpy, lmer, emmeans
-    -  reproduceFigure2.ipynb: python, pandas, numpy, scipy, matplotlib
-    -  reproduceFigure3.ipynb: python, pandas, numpy
+   - `python` (3.9.13)
+      - `pandas` (1.0.5)
+      - `numpy` (1.23.2)
+      - `scipy` (1.10.0)
+      - `statsmodels` (0.13.5)
+      - `pingouin` (0.5.3)
+      - `matplotlib-base` (3.6.3)
+      - `matplotlib-inline` (0.1.6)
+      - 
+   - `R` (4.2.1)
+      - `lmer` (1.1.30)
+      - `emmeans` (1.8.0)
+      - `aov` ()
+    - **generateSpecificQuestions.ipynb:** `python`
+    - **reproduceTable1.ipynb:** `python`, `pandas`, `numpy`, `pingouin`, `scipy`
+    - **reproduceTable2.ipynb:** `python`, `pandas`, `numpy`, `rpy2`, `R`, `aov`
+    - **reproduceTable4.ipynb:** `python`, `pandas`, `numpy`, `rpy2`, `R`, `aov`
+    - **reproduceFigure1.ipynb:** `python`, `pandas`, `numpy`, `rpy2`, `R`, `lmer`, `emmeans`
+    - **reproduceFigure2.ipynb:** `python`, `pandas`, `numpy`, `scipy`, `matplotlib`
+    - **reproduceFigure3.ipynb:** `python`, `pandas`, `numpy`
   
 ## How does the software works
 - The software takes our created Question Templates and generate Specific Questions based on the ontology mappings. We then take the generated Specific Questions to run analysis based on the required data. 
