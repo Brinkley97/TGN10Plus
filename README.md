@@ -30,7 +30,7 @@
    - `R` (4.2.1)
       - `lmer` (1.1.30)
       - `emmeans` (1.8.0)
-      - `aov` ()
+      - `aov` (3.6.2)
     - **generateSpecificQuestions.ipynb:** `python`
     - **reproduceTable1.ipynb:** `python`, `pandas`, `numpy`, `pingouin`, `scipy`
     - **reproduceTable2.ipynb:** `python`, `pandas`, `numpy`, `rpy2`, `R`, `aov`
