@@ -18,8 +18,8 @@
 ## How to use software and Requirements
 - To use this software, you can clone/fork the repository. Once you do this, ensure that you have installed the following coding languages, libraries and packages. We also include the version we're using but have not tested our code on updated versions. To find a specific analysis, navigate to that file and run all cells. 
    - `rpy2` (3.5.4) to integrate python and R
-   - `python` (3.7.5)
-      - `pandas` (1.0.5)
+   - `python` (3.7.5), reproduceTable1.ipynb
+      - `pandas` (1.0.5), reproduceTable1.ipynb
       - `scipy` (1.1.0)
       - `statsmodels` ()
       - `pingouin` ()
@@ -30,6 +30,13 @@
       - `emmeans` ()
       - `PostHocTest` ()
       - `ezANOVA` ()
+    - generateSpecificQuestions.ipynb: python
+    -  reproduceTable1.ipynb: python, pandas, numpy, pingouin, scipy
+    -  reproduceTable2.ipynb: python, pandas, numpy, rpy2, aov
+    -  reproduceTable4.ipynb: python, pandas, numpy, rpy2, aov
+    -  reproduceFigure1.ipynb: python, pandas, numpy, lmer, emmeans
+    -  reproduceFigure2.ipynb: python, pandas, numpy, scipy, matplotlib
+    -  reproduceFigure3.ipynb: python, pandas, numpy
   
 ## How does the software works
 - The software takes our created Question Templates and generate Specific Questions based on the ontology mappings. We then take the generated Specific Questions to run analysis based on the required data. 
