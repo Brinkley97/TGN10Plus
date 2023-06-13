@@ -1,7 +1,7 @@
 library(lme4)
 library(emmeans)
 library(report)
-library(DescTools)
+# print(sessionInfo())
 
 # ------------------------------------------
 # model for anxieity

@@ -1,3 +1,8 @@
+library(lme4)
+library(emmeans)
+library(report)
+# print(sessionInfo())
+
 rest_model = function(at_work_df, off_work_df) {
     work_rest_model <- aov(rest ~ shift + age + gender, data = at_work_df)
     off_rest_model <- aov(rest ~ shift + age + gender, data = off_work_df)
