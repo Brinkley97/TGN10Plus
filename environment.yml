@@ -11,8 +11,8 @@ dependencies:
   - nodejs
   - pandas
   - pingouin
-  #- r-reticulate
-  #- r-devtools
-  #- r-ez
+  - r-reticulate
+  - r-devtools
+  - r-ez
   #- ipykernel
 prefix: /Users/mosorio/miniconda3/envs/tgn10plus
