@@ -6,13 +6,9 @@ channels:
 dependencies:
   - jupyterlab
   - python=3.9
-  - r-irkernel
   - numpy
   - nodejs
   - pandas
   - pingouin
-  - r-reticulate
-  - r-devtools
-  - r-ez
-  - ipykernel
+  - rpy2
 prefix: /Users/mosorio/miniconda3/envs/tgn10plus
