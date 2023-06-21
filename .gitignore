@@ -2,3 +2,4 @@
 dont_push_these_but_look/latest_replace_vars.ipynb
 .DS_Store
 dont_push_these_but_look/mainReplaceVariables-Copy1.ipynb
+data/tiles_datasets/
