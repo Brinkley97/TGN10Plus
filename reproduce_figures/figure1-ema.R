@@ -115,12 +115,12 @@ na_model = function(df){
 
     model = lmer(pand_NegAffect ~ work*shift + (1 | id), data = df)
     em <- emmeans(model, pairwise ~ work*shift)
-    posthoc <- PostHocTest(aov(pand_NegAffect ~ work*shift, data=df), method = "lsd")
+#     posthoc <- PostHocTest(aov(pand_NegAffect ~ work*shift, data=df), method = "lsd")
     # posthoc <- PostHocTest(model, method = "lsd")
 
     print(summary(model))
     print(summary(em))
-    print(posthoc)
+#     print(posthoc)
     print("-----------------------------------")
     print("-----------------------------------")
     print(report(model))
