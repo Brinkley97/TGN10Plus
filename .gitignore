@@ -13,7 +13,8 @@ data/tiles_datasets/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -39,4 +40,10 @@ Temporary Items
 *.icloud
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
+
+
+data/parameters_files/table_1_behavioral_parameters.txt
+data/parameters_files/table_1_demographic_parameters.txt
+data/parameters_files/table_1_behavioral_parameters.txt
+data/parameters_files/table_1_demographic_parameters.txt
 
