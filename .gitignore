@@ -3,3 +3,7 @@ dont_push_these_but_look/latest_replace_vars.ipynb
 .DS_Store
 dont_push_these_but_look/mainReplaceVariables-Copy1.ipynb
 data/tiles_datasets/
+data/parameters_files/table_1_behavioral_parameters.txt
+data/parameters_files/table_1_demographic_parameters.txt
+data/parameters_files/table_1_behavioral_parameters.txt
+data/parameters_files/table_1_demographic_parameters.txt
