@@ -1,5 +1,6 @@
 # TGN10+
 [![DOI](https://zenodo.org/badge/587812631.svg)](https://zenodo.org/badge/latestdoi/587812631)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Brinkley97/TGN10Plus/HEAD)
  
 ## Description of files
 - generateSpecificQuestions.ipynb -- The purpose of this file is to take our Question Templates and generate Specific Questions based on the ontology mappings. 
