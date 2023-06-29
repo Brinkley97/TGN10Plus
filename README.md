@@ -58,7 +58,8 @@ mkdir -p results
 3. Run the docker image.
 
 ```bash
-docker run -t -v ${PWD}/results:/home/jovyan/results --entrypoint /bin/bash ghcr.io/mosoriob/tgn10plus:latest -c "                                                                                        base
+docker run \
+   -v ${PWD}/results:/home/jovyan/results --entrypoint /bin/bash ghcr.io/mosoriob/tgn10plus:latest -c "
    papermill reproduce_tables/reproduceTable1.ipynb resultant.ipynb \
    -p path_to_demographic_day_file synthetic_data/tiles_datasets/table_1_synthetic_data/day_table_1_synthetic_demographic_data.csv \
    -p path_to_demographic_night_file synthetic_data/tiles_datasets/table_1_synthetic_data/night_table_1_synthetic_demographic_data.csv \
