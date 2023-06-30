@@ -1,0 +1,15 @@
+Input file: age.csv
+Input parameters: "< 40 Years" and ">= 40 Years"
+Output: Demographic variable Age with 2 metrics (1) oddsratio and (2) pvalue
+
+Input file: educ.csv
+Input parameters: "Some college or College" and "Graduate"
+Output: Demographic variable Educ with 2 metrics (1) oddsratio and (2) pvalue
+
+Input file: gender.csv
+Input parameters: "Female" and "Male"
+Output: Demographic variable Gender with 2 metrics (1) oddsratio and (2) pvalue
+
+Input file: native_lang.csv
+Input parameters: "English" and "non-english"
+Output: Demographic variable Native Lang with 2 metrics (1) oddsratio and (2) pvalue
