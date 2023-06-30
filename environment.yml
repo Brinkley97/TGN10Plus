@@ -11,4 +11,5 @@ dependencies:
   - pandas
   - pingouin
   - rpy2
+  - papermill
 prefix: /Users/mosorio/miniconda3/envs/tgn10plus
