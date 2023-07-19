@@ -57,6 +57,8 @@ mkdir -p results
 
 3. Run the docker image.
 
+The target variable can be: ['Gender', 'Age' 'Educ', 'native_lang', 'stai', 'pan_PosAffect', 'pan_NegAffect', 'swls', 'bfi_Neuroticism', 'bfi_Conscientiousness', 'bfi_Extraversion', 'bfi_Agreeableness', 'bfi_Openness', 'psqi']"
+
 ```bash
 docker run \
    -v ${PWD}/results:/home/jovyan/results --entrypoint /bin/bash ghcr.io/mosoriob/tgn10plus:latest -c "
@@ -67,8 +69,8 @@ docker run \
    -p path_to_behaviorial_night_file synthetic_data/tiles_datasets/table_1_synthetic_data/night_table_1_synthetic_behavioral_data.csv \
    -p output_json results/summary.json \
    -p output_csv results/summary.csv \
-   -p specific_questions_notebook generateSpecificQuestions.ipynb
-   -p target_variable = ['Gender', 'Age' 'Educ', 'native_lang', 'stai', 'pan_PosAffect', 'pan_NegAffect', 'swls', 'bfi_Neuroticism', 'bfi_Conscientiousness', 'bfi_Extraversion', 'bfi_Agreeableness', 'bfi_Openness', 'psqi']"
+   -p specific_questions_notebook generateSpecificQuestions.ipynb \
+   -p target_variable = Gender
 ```
 
 ## References
