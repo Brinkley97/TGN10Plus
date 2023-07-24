@@ -70,7 +70,7 @@ docker run \
    -p output_json results/summary.json \
    -p output_csv results/summary.csv \
    -p specific_questions_notebook generateSpecificQuestions.ipynb \
-   -p target_variable = Gender
+   -p target_variable = Gender "
 ```
 
 ## References
