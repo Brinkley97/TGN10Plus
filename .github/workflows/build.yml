@@ -14,7 +14,7 @@ jobs:
         uses: wragge/repo2docker-action@master
         with:
           DOCKER_REGISTRY: ghcr.io
-          DOCKER_USERNAME: ${{ github.actor }}
+          DOCKER_USERNAME: ${{ github.repository_owner }}
           DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           BINDER_CACHE: false
           PUBLIC_REGISTRY_CHECK: false
