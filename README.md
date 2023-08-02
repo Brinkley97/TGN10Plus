@@ -61,7 +61,7 @@ The target variable can be: ['Gender', 'Age' 'Educ', 'native_lang', 'stai', 'pan
 
 ```bash
 docker run \
-   -v ${PWD}/results:/home/jovyan/results --entrypoint /bin/bash ghcr.io/mosoriob/tgn10plus:latest -c "
+   -v ${PWD}/results:/home/jovyan/results --entrypoint /bin/bash ghcr.io/brinkley97/tgn10plus:latest -c "
    papermill reproduce_tables/reproduceTable1.ipynb resultant.ipynb \
    -p path_to_demographic_day_file synthetic_data/tiles_datasets/table_1_synthetic_data/day_table_1_synthetic_demographic_data.csv \
    -p path_to_demographic_night_file synthetic_data/tiles_datasets/table_1_synthetic_data/night_table_1_synthetic_demographic_data.csv \
@@ -70,7 +70,7 @@ docker run \
    -p output_json results/summary.json \
    -p output_csv results/summary.csv \
    -p specific_questions_notebook generateSpecificQuestions.ipynb \
-   -p target_variable = Gender "
+   -p target_variable Gender "
 ```
 
 ## References
